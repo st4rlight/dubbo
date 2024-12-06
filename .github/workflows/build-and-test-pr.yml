@@ -265,11 +265,6 @@ jobs:
         with:
           name: surefire-reports
           path: "**/target/surefire-reports/**"
-      - name: "Upload site reports"
-        uses: actions/upload-artifact@v4
-        with:
-          name: site-reports
-          path: "**/target/site/**"
 
   samples-test-prepare:
     needs: check-format
